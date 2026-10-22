@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareMarket - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="dashboard">
+    <header class="navbar">
+        <a href="index.html" class="logo">📈 ShareMarket</a>
+        <nav>
+            <a href="index.html" class="active">Dashboard</a>
+            <a href="stocks.html">Stocks</a>
+            <a href="portfolio.html">Portfolio</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="welcome">
+            <div>
+                <p class="muted">MARKET OVERVIEW</p>
+                <h1>Welcome to ShareMarket</h1>
+                <p>Track stocks and explore your investments.</p>
+            </div>
+            <a href="stocks.html" class="btn">Explore Stocks →</a>
+        </section>
+
+        <section class="market-grid">
+            <article class="market-card">
+                <p>NIFTY 50</p>
+                <h2>24,850.50</h2>
+                <span class="positive">▲ 0.85%</span>
+            </article>
+            <article class="market-card">
+                <p>SENSEX</p>
+                <h2>81,250.75</h2>
+                <span class="positive">▲ 0.62%</span>
+            </article>
+            <article class="market-card">
+                <p>BANK NIFTY</p>
+                <h2>56,120.20</h2>
+                <span class="negative">▼ 0.24%</span>
+            </article>
+        </section>
+
+        <section class="panel">
+            <div class="section-heading">
+                <div>
+                    <h2>Popular Stocks</h2>
+                    <p class="muted">Explore selected market stocks</p>
+                </div>
+                <a href="stocks.html" class="text-link">View all →</a>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Price (₹)</th>
+                            <th>Change</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dashboardStocks"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Quick Links</h2>
+            <div class="quick-links">
+                <a href="stocks.html">📊 Browse Stocks</a>
+                <a href="portfolio.html">💼 View Portfolio</a>
+            </div>
+        </section>
+
+        <p class="disclaimer">Demo application. Prices and market indices are illustrative, not live data.</p>
+    </main>
+
+    <footer>© 2026 ShareMarket App | Learning Project</footer>
+</body>
+</html>

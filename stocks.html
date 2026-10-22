@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareMarket - Stocks</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="stocks">
+    <header class="navbar">
+        <a href="index.html" class="logo">📈 ShareMarket</a>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="stocks.html" class="active">Stocks</a>
+            <a href="portfolio.html">Portfolio</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-heading">
+            <p class="muted">MARKET EXPLORER</p>
+            <h1>Stocks Market</h1>
+            <p>Search companies and add stocks to your watchlist.</p>
+        </section>
+
+        <section class="panel">
+            <div class="search-row">
+                <input type="search" id="stockSearch"
+                       placeholder="Search company or symbol..."
+                       aria-label="Search stocks">
+                <button class="btn" id="showAll">Show All</button>
+            </div>
+
+            <div class="filter-row">
+                <button class="filter-btn selected" data-filter="all">All Stocks</button>
+                <button class="filter-btn" data-filter="positive">Gainers</button>
+                <button class="filter-btn" data-filter="negative">Losers</button>
+                <button class="filter-btn" data-filter="watchlist">Watchlist ★</button>
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Symbol</th>
+                            <th>Price (₹)</th>
+                            <th>Change</th>
+                            <th>Watchlist</th>
+                        </tr>
+                    </thead>
+                    <tbody id="stocksTable"></tbody>
+                </table>
+            </div>
+            <p id="stockCount" class="muted"></p>
+        </section>
+
+        <p class="disclaimer">All stock prices are sample values for demonstration purposes.</p>
+    </main>
+
+    <footer>© 2026 ShareMarket App | Learning Project</footer>
+</body>
+</html>

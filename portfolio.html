@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareMarket - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="portfolio">
+    <header class="navbar">
+        <a href="index.html" class="logo">📈 ShareMarket</a>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="stocks.html">Stocks</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-heading">
+            <p class="muted">YOUR INVESTMENTS</p>
+            <h1>My Portfolio</h1>
+            <p>Review your sample holdings and investment performance.</p>
+        </section>
+
+        <section class="market-grid">
+            <article class="market-card">
+                <p>Total Investment</p>
+                <h2 id="totalInvestment">₹0</h2>
+            </article>
+            <article class="market-card">
+                <p>Current Value</p>
+                <h2 id="currentValue">₹0</h2>
+            </article>
+            <article class="market-card">
+                <p>Total Profit / Loss</p>
+                <h2 id="totalProfit">₹0</h2>
+                <span id="profitPercent"></span>
+            </article>
+        </section>
+
+        <section class="panel">
+            <div class="section-heading">
+                <div>
+                    <h2>Your Holdings</h2>
+                    <p class="muted">Example portfolio with sample quantities</p>
+                </div>
+                <button class="btn" id="resetPortfolio">Reset Demo</button>
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Qty</th>
+                            <th>Buy Price (₹)</th>
+                            <th>Market Price (₹)</th>
+                            <th>Profit / Loss</th>
+                        </tr>
+                    </thead>
+                    <tbody id="portfolioTable"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <p class="disclaimer">This is a simulated portfolio. No real trades or investments are made.</p>
+    </main>
+
+    <footer>© 2026 ShareMarket App | Learning Project</footer>
+</body>
+</html>
